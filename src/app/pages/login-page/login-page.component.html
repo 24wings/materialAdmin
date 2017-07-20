@@ -1,0 +1,20 @@
+<div class="example-form">
+    <table class="example-full-width" cellspacing="0">
+        <tr>
+            <md-input-container class="example-full-width">
+                <input mdInput placeholder="用户名" [(ngModel)]="admin.username">
+            </md-input-container>
+        </tr>
+        <tr>
+            <md-input-container class="example-full-width">
+                <input type="password" [(ngModel)]="admin.password" mdInput placeholder="密码">
+            </md-input-container>
+        </tr>
+        <tr>
+            <md-checkbox value="" color="primary|accent|warn">记住密码</md-checkbox>
+        </tr>
+        <tr class="mt50"> <a md-raised-button color="primary" (click)="login()">登录</a>
+            <!--<a md-raised-button color="accent" class="pull-right">注册</a>-->
+        </tr>
+    </table>
+</div>

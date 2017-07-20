@@ -1,0 +1,27 @@
+.toolbar-icon {
+    cursor: pointer;
+    padding: 0 14px;
+    margin-right: 100px;
+}
+
+.toolbar-spacer {
+    flex: 1 1 auto;
+    display: none;
+}
+
+.example-container {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+}
+
+.example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-sidenav {
+    padding: 20px;
+    min-width: 250px;
+}

@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pull-right {
+    float: right
+}
+
+.pull-left {
+    float: left;
+}
+
+.mt50 {
+    display: block;
+    margin-top: 50px;
+}

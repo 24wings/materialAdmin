@@ -1,0 +1,31 @@
+<md-toolbar color="primary">
+    <span>后台管理</span>
+    <span class="toolbar-spacer"></span>
+    <md-icon class="toolbar-icon" (click)="sidenav.open()">view list</md-icon>
+
+    <md-icon class="toolbar-icon" class="pull-right">favorite</md-icon>
+
+
+</md-toolbar>
+
+<router-outlet></router-outlet>
+
+
+<md-sidenav-container class="example-container">
+    <md-sidenav #sidenav class="example-sidenav" mode="side" opened="true">
+        <md-list *ngFor="let route of routes ;">
+            <h3 md-subheader>{{route.name}}</h3>
+            <md-list-item *ngFor="let page of route.children">
+                <md-icon md-list-icon>list</md-icon>
+                <h4 md-line>{{page.name}}</h4>
+                <p md-line> </p>
+            </md-list-item>
+            <md-divider></md-divider>
+        </md-list>
+    </md-sidenav>
+
+    <div class="example-sidenav-content">
+
+    </div>
+
+</md-sidenav-container>
